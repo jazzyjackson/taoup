@@ -70,9 +70,9 @@ elsif whitetrash then
  alias :puts_old :puts
  alias :print_old :print
  # implement color swaps for:
- #  - white:		"grey"      => "\e[0;37m", "white"      => "\e[1;37m",
- #  - black:		"black"     => "\e[0;30m"
- #  - black+bold:	"darkgrey"   => "\e[1;30m",
+ #  - white:    "grey"      => "\e[0;37m", "white"      => "\e[1;37m",
+ #  - black:    "black"     => "\e[0;30m"
+ #  - black+bold: "darkgrey"   => "\e[1;30m",
   def puts(*args)
    args = args.join('')
    args.gsub!(/(\x1b\[)1;37m/,'\1' + '0;30m') # ie. replace bold white with black
@@ -352,16 +352,16 @@ puts white{ bold{ 'Predictability' } } + white{ ': Predictability is more import
 puts white{ bold{ 'Reality' } } + white{ ': The interface isn\'t finished till the end-user testing is done.' } + black{ bold{ " - Eric S. Raymond, The Art of Unix Usability (2004)" } }
 
 # x11 guy
-puts '------------ Mike Garcanz: The Unix Philosophy -------------------------------------'
-puts white{ bold{ 'Small is beautiful.' } } + black{ bold{ ' - Mike Garcanz: The Unix Philosophy' } }
-puts white{ bold{ 'Make each program do one thing well.' } } + black{ bold{ ' - Mike Garcanz: The Unix Philosophy' } }
-puts white{ bold{ 'Build a prototype as soon as possible.' } } + black{ bold{ ' - Mike Garcanz: The Unix Philosophy' } }
-puts white{ bold{ 'Choose portability ' } } + white{ '[high level]' } + white{ bold{ ' over efficiency ' } } + white{ '[low-level]' } + white{ bold{ '.' } } + black{ bold{ ' - Mike Garcanz: The Unix Philosophy' } }
-puts white{ bold{ 'Store data in flat text files.' } } + black{ bold{ ' - Mike Garcanz: The Unix Philosophy' } }
-puts white{ bold{ 'Use software leverage to your advantage.' } } + black{ bold{ ' - Mike Garcanz: The Unix Philosophy' } }
-puts white{ bold{ 'Use shell scripts ' } } + white{ '[higher level languages]' } + white{ bold{ ' to increase leverage and portability.' } } + black{ bold{ ' - Mike Garcanz: The Unix Philosophy' } }
-puts white{ bold{ 'Avoid captive user interfaces.' } } + black{ bold{ ' - Mike Garcanz: The Unix Philosophy' } }
-puts white{ bold{ 'Make every program a filter.' } } + black{ bold{ ' - Mike Garcanz: The Unix Philosophy' } }
+puts '------------ Mike Gancarz: The Unix Philosophy -------------------------------------'
+puts white{ bold{ 'Small is beautiful.' } } + black{ bold{ ' - Mike Gancarz: The Unix Philosophy' } }
+puts white{ bold{ 'Make each program do one thing well.' } } + black{ bold{ ' - Mike Gancarz: The Unix Philosophy' } }
+puts white{ bold{ 'Build a prototype as soon as possible.' } } + black{ bold{ ' - Mike Gancarz: The Unix Philosophy' } }
+puts white{ bold{ 'Choose portability ' } } + white{ '[high level]' } + white{ bold{ ' over efficiency ' } } + white{ '[low-level]' } + white{ bold{ '.' } } + black{ bold{ ' - Mike Gancarz: The Unix Philosophy' } }
+puts white{ bold{ 'Store data in flat text files.' } } + black{ bold{ ' - Mike Gancarz: The Unix Philosophy' } }
+puts white{ bold{ 'Use software leverage to your advantage.' } } + black{ bold{ ' - Mike Gancarz: The Unix Philosophy' } }
+puts white{ bold{ 'Use shell scripts ' } } + white{ '[higher level languages]' } + white{ bold{ ' to increase leverage and portability.' } } + black{ bold{ ' - Mike Gancarz: The Unix Philosophy' } }
+puts white{ bold{ 'Avoid captive user interfaces.' } } + black{ bold{ ' - Mike Gancarz: The Unix Philosophy' } }
+puts white{ bold{ 'Make every program a filter.' } } + black{ bold{ ' - Mike Gancarz: The Unix Philosophy' } }
 
 # unix
 puts '--- unix ----'
@@ -1262,7 +1262,7 @@ puts white{ "Philosophy is dead." } + black{ bold{ " - Stephen Hawking" } }
 puts white{ "When you change the way you look at things, the things you look at change." } + black{ bold{ " - Max Planck" } }
 puts white{ "They always say time changes things, but you actually have to change them yourself." } + black{ bold{ " - Andy Warhol" } }
 puts white{ "You miss 100% of the shots you don't take." } + black{ bold{ " - Wayne Gretzky" } }
-puts white{ "The truism these days is that " } + white{ bold{ "you are either taking care of people, making software, or being replaced by software" } } + white{ "." } + black{ bold{ " - 	jaggederest" } }
+puts white{ "The truism these days is that " } + white{ bold{ "you are either taking care of people, making software, or being replaced by software" } } + white{ "." } + black{ bold{ " -  jaggederest" } }
 puts white{ "It went as an unspoken, unquestionable assumption that telephony was the right model for data networking." } + black{ bold{ " - Van Jacobson" } }
 puts white{ "If you think about it, democracy is still in the 19th century. Your communication with your representatives and ministers amounts to a few bits per year. It's ridiculous." } + black{ bold{ " - Pedro Domingos" } }
 puts white{ bold{ "Technology always makes less progress than you expect in the short term and more progress in the long term, and AI is the ultimate example of this." } } + white{ " The AI systems that we use in everyday life today are still incredibly stupid. There's no intelligence in Alexa or Siri." } + black{ bold{ " - Pedro Domingos" } }
